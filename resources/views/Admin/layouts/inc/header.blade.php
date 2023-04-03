@@ -7,7 +7,7 @@
                 <div class="navbar-brand-box horizontal-logo">
                     <a href="" class="logo logo-dark">
                         <span class="logo-sm">
-                            <img class="logo_basic" src="{{get_file($settings->fave_icon)}}" alt=""
+                            <img class="logo_basic" src="{{get_file($settings->logo_header)}}" alt=""
                                  style="height: 50px ; object-fit: contain ; padding: 5px">
                         </span>
                         <span class="logo-lg">
@@ -17,7 +17,7 @@
                     </a>
                     <a href="" class="logo logo-light">
                         <span class="logo-sm">
-                            <img class="logo_basic" src="{{get_file($settings->fave_icon)}}" alt=""
+                            <img class="logo_basic" src="{{get_file($settings->logo_header)}}" alt=""
                                  style="height: 50px ; object-fit: contain ; padding: 5px">
                         </span>
                         <span class="logo-lg">
@@ -86,7 +86,7 @@
                                 <span
                                     class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">{{auth()->guard('admin')->user()->name}}</span>
                                 <span
-                                    class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">{{auth()->guard('admin')->user()->business_name}}</span>
+{{--                                    class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">{{auth()->guard('admin')->user()->business_name}}</span>--}}
                             </span>
                         </span>
                     </button>

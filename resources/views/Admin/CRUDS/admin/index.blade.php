@@ -4,6 +4,9 @@
 @endsection
 @section('css')
 @endsection
+@section('breadCramp')
+    breadCramp
+@endsection
 @section('content')
     <div class="card">
         <div class="card-header d-flex align-items-center">

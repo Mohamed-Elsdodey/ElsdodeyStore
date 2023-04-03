@@ -20,12 +20,18 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::get('activateAdmin',[App\Http\Controllers\Admin\AdminController::class,'activate'])->name('admin.active.admin');
 
 
-    ### languages
-
-    Route::resource('languages', \App\Http\Controllers\Admin\LanguageController::class);//language
-    Route::get('activateLanguage', [App\Http\Controllers\Admin\LanguageController::class, 'activate'])->name('admin.active.language');
+    ### settings
+    Route::resource('settings', \App\Http\Controllers\Admin\SettingController::class);//setting
 
 
+    ### branches
+    Route::resource('branches', \App\Http\Controllers\Admin\BranchController::class);//setting
+
+    ### employee
+    Route::resource('employees', \App\Http\Controllers\Admin\EmployeeController::class);//setting
+
+    ### roles
+    Route::resource('roles', \App\Http\Controllers\Admin\EmployeeController::class);//setting
 
 
 

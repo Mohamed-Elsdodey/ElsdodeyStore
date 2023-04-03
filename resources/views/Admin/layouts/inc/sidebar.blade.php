@@ -5,19 +5,19 @@
         <!-- Dark Logo-->
         <a href="{{route('frontend.index')}}" class="logo logo-dark">
             <span class="logo-sm">
-{{--                <img src="{{get_file($settings->fave_icon)}}" alt="">--}}
+                <img src="{{get_file($settings->header_logo)}}" alt="">
             </span>
             <span class="logo-lg">
-{{--                <img src="{{get_file($settings->logo_header)}}" alt="">--}}
+                <img src="{{get_file($settings->header_logo)}}" alt="">
             </span>
         </a>
         <!-- Light Logo-->
         <a href="" class="logo logo-light">
             <span class="logo-sm">
-{{--                <img src="{{get_file($settings->fave_icon)}}" alt="">--}}
+                <img src="{{get_file($settings->header_logo)}}" alt="">
             </span>
             <span class="logo-lg">
-{{--                <img src="{{get_file($settings->logo_header)}}" alt="">--}}
+                <img src="{{get_file($settings->header_logo)}}" alt="">
             </span>
         </a>
         <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
@@ -39,12 +39,36 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{route('languages.index')}}">
-                        <i class="fal fa-language"></i>
-                        <span>اللغات</span>
+                    <a class="nav-link menu-link" href="{{route('admins.index')}}">
+                        <i class="fa fa-user-secret"></i>
+                        <span>المشرفين</span>
                     </a>
                 </li>
 
+
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{route('settings.index')}}">
+                        <i class="fa fa-cog"></i>
+                        <span>الاعدادات</span>
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{route('branches.index')}}">
+                        <i class="fas fa-code-branch"></i>
+                        <span>الفروع</span>
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{route('employees.index')}}">
+                        <i class="fa fa-user"></i>
+                        <span>الموظفين</span>
+                    </a>
+                </li>
 
 
 
